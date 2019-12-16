@@ -13,7 +13,7 @@ if [[ ${file} != *".droppy-upload" ]]; then
 
 	echo "processing $file ..."
 
-	docker run -v ${FILES:-spleetweb_files}:/files researchdeezer/spleeter \
+	docker run --rm -v ${FILES:-spleetweb_files}:/files researchdeezer/spleeter \
 		separate -i "${file}" \
 	-o /files/output
 
