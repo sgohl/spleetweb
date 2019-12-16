@@ -2,7 +2,7 @@
 
 if [[ ! -d /files/input ]]; then
 
-	mkdir -p /files/input/{2stem,4stem,5stem}
+	mkdir -p /files/input/{2stems,4stems,5stems}
 	exit
 fi
 
@@ -15,7 +15,7 @@ if [[ ${file} != *".droppy-upload" ]]; then
 
 	docker run -v ${FILES:-spleetweb_files}:/files researchdeezer/spleeter \
 		separate -i "${file}" \
-		-p spleeter:${output} \
 	-o /files/output
 
+	#-p spleeter:${output} \
 fi
