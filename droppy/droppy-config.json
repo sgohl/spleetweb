@@ -1,0 +1,28 @@
+{
+  "listeners": [
+    {
+      "host": [
+        "0.0.0.0",
+        "::"
+      ],
+      "port": 80,
+      "protocol": "http"
+    }
+  ],
+  "public": true,
+  "timestamps": true,
+  "linkLength": 5,
+  "linkExtensions": false,
+  "logLevel": 2,
+  "maxFileSize": 0,
+  "updateInterval": 10,
+  "pollingInterval": 2,
+  "keepAlive": 20000,
+  "allowFrame": true,
+  "readOnly": false,
+  "compression": true,
+  "ignorePatterns": [],
+  "watch": true,
+  "headers": {}
+}
+
